@@ -1,0 +1,37 @@
+{
+	"name": "AST__BotGlass_front",
+	"plugin-id": "Sprite",
+	"sid": 743226592959493,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 188,
+						"height": 65,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3336479,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 652347113018645,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

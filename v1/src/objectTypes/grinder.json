@@ -1,0 +1,64 @@
+{
+	"name": "Grinder",
+	"plugin-id": "Sprite",
+	"sid": 615819188181894,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 264,
+						"height": 385,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6610583,
+						"collisionPoly": {
+							"points": [
+								0.06818181818181819,
+								0.05584415584415585,
+								0.13825757575757608,
+								0.05584415584415585,
+								0.1448863636363639,
+								0.12792207792207794,
+								0.8636363636363632,
+								0.13116883116883118,
+								0.857007575757575,
+								0.05259740259740253,
+								0.9436553030303033,
+								0.056168831168831035,
+								0.9450757575757593,
+								0.7636363636363644,
+								0.06060606060606066,
+								0.7597402597402633
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Drop",
+								"x": 0.5,
+								"y": 0.8987012987012987
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 106685975976337,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,63 @@
+{
+	"name": "Piece",
+	"plugin-id": "Sprite",
+	"sid": 721109007081112,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 200,
+						"height": 80,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5253418,
+						"collisionPoly": {
+							"points": [
+								0.12555555555555553,
+								0.17638888888888893,
+								0.9638888888888891,
+								0.4833333333333334,
+								0.9722222222222219,
+								0.7027777777777778,
+								0.03777777777777779,
+								0.7041666666666667,
+								0.03833333333333331,
+								0.48888888888888893
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Hinge",
+								"x": 0.16,
+								"y": 0.4375
+							},
+							{
+								"name": "Impusle",
+								"x": 1.04,
+								"y": 0.5875
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 847826406158777,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

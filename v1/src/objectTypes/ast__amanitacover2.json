@@ -1,0 +1,89 @@
+{
+	"name": "AST__AmanitaCover2",
+	"plugin-id": "Sprite",
+	"sid": 981349343651720,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 199,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6756164,
+						"collisionPoly": {
+							"points": [
+								0.07537688442211055,
+								0.22058823529411764,
+								0.5,
+								0.014705882352941176,
+								0.9195979899497487,
+								0.22058823529411764,
+								0.9949748743718593,
+								0.5,
+								0.914572864321608,
+								0.75,
+								0.5,
+								0.9852941176470589,
+								0.08040201005025126,
+								0.75,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 199,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6041068,
+						"collisionPoly": {
+							"points": [
+								0.07537688442211055,
+								0.22058823529411764,
+								0.5,
+								0.014705882352941176,
+								0.9195979899497487,
+								0.22058823529411764,
+								0.9949748743718593,
+								0.5,
+								0.914572864321608,
+								0.75,
+								0.5,
+								0.9852941176470589,
+								0.08040201005025126,
+								0.75,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 686986849998897,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

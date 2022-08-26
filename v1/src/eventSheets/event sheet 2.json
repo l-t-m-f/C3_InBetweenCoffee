@@ -1,0 +1,903 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "GameState",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 273423765718140
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Customers",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "Customer-AddNewToLine",
+					"functionDescription": "",
+					"functionCategory": "Customers",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 333094263479577
+				}
+			],
+			"sid": 965975260149134
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "UFOSteward",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "UFOSteward-ChangeDemeanor",
+					"functionDescription": "",
+					"functionCategory": "UFO",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 592266423450503
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Dialogs",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "UFOSteward-Dialogs-SayRemark",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 575704095323816
+						}
+					],
+					"sid": 413401353979391
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Brewing",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "UFOSteward-Brewing-LoadBeanIntoRecipe",
+							"functionDescription": "",
+							"functionCategory": "UFOSteward, Brewing",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 887476769476510
+						},
+						{
+							"functionName": "UFOSteward-Brewing-DiscardRecipe",
+							"functionDescription": "",
+							"functionCategory": "UFOSteward, Brewing",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 645223732172087
+						},
+						{
+							"functionName": "UFOSteward-Brewing-AddIngredient",
+							"functionDescription": "",
+							"functionCategory": "UFOSteward, Brewing",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 397110744073062
+						},
+						{
+							"functionName": "UFOSteward-Brewing-Brew",
+							"functionDescription": "",
+							"functionCategory": "UFOSteward, Brewing",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 613972685337847
+						}
+					],
+					"sid": 548807628730151
+				}
+			],
+			"sid": 285353809299998
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "MachineParts",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"functionName": "MachinePart-Repair",
+					"functionDescription": "",
+					"functionCategory": "MachineParts",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 434274027363772
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "BeanSpawner",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "BeanSpawner-SpawnSingle",
+							"functionDescription": "",
+							"functionCategory": "BeanSpawner",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 777564243114107
+						},
+						{
+							"functionName": "BeanSpawner-CreateBeanWave",
+							"functionDescription": "",
+							"functionCategory": "BeanSpawner",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 864281033634506
+						}
+					],
+					"sid": 159191178376131
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Spinners",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "Spinner-ChangeSpeed",
+							"functionDescription": "",
+							"functionCategory": "Spinnerrs",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 652462995316006
+						},
+						{
+							"functionName": "Spinner-Reverse",
+							"functionDescription": "",
+							"functionCategory": "Spinners",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 867438003585294
+						}
+					],
+					"sid": 727678566539692
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Bumpers",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "Bumper-ChangeBumpStrength",
+							"functionDescription": "",
+							"functionCategory": "Bumpers",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 330499291254460
+						}
+					],
+					"sid": 580297356599630
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "FlavourCage",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "FlavourCage-ChangeBeanFlavour",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 869835070434572
+						}
+					],
+					"sid": 524654194267309
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Grinder",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "Grinder-GrindBean",
+							"functionDescription": "",
+							"functionCategory": "Grinder",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 801758432543415
+						}
+					],
+					"sid": 253166506119539
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Paddles",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "variable",
+							"name": "paddleMaxAngle_aboveThreshold",
+							"type": "number",
+							"initialValue": "315",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 264746883206601
+						},
+						{
+							"eventType": "variable",
+							"name": "paddleMinAngle_bellowThreshold",
+							"type": "number",
+							"initialValue": "15",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 897250349516250
+						},
+						{
+							"eventType": "variable",
+							"name": "paddleAngleVelocity",
+							"type": "number",
+							"initialValue": "500",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 224651513428840
+						},
+						{
+							"eventType": "variable",
+							"name": "paddleRetractStrength",
+							"type": "number",
+							"initialValue": "120",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 295486610214625
+						},
+						{
+							"eventType": "variable",
+							"name": "paddleStrength",
+							"type": "number",
+							"initialValue": "300",
+							"comment": "",
+							"isStatic": false,
+							"isConstant": false,
+							"sid": 568376095570334
+						},
+						{
+							"functionName": "Paddles-Refresh",
+							"functionDescription": "",
+							"functionCategory": "Paddles",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 568442351696625,
+									"parameters": {
+										"object": "Paddle"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 287706259042803,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "pick-children",
+											"objectClass": "Paddle",
+											"sid": 506592689214942,
+											"parameters": {
+												"child": "SpriteFont",
+												"which": "own"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-text",
+											"objectClass": "SpriteFont",
+											"sid": 282695392597711,
+											"parameters": {
+												"text": "round(Paddle.Angle)"
+											}
+										}
+									],
+									"sid": 615092732841665
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Paddle",
+											"sid": 550445094691369,
+											"parameters": {
+												"instance-variable": "PaddleSide",
+												"comparison": 0,
+												"value": "0"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 315064024466581,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 381432765930658,
+													"parameters": {
+														"first-value": "Paddle.Angle",
+														"comparison": 4,
+														"second-value": "0"
+													}
+												},
+												{
+													"id": "compare-two-values",
+													"objectClass": "System",
+													"sid": 385480498172115,
+													"parameters": {
+														"first-value": "Paddle.Angle",
+														"comparison": 3,
+														"second-value": "180"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 378089664474206,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 117056705717253,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 4,
+																"second-value": "15"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-speed",
+															"objectClass": "Paddle",
+															"sid": 524897115244180,
+															"behaviorType": "Orbit",
+															"parameters": {
+																"speed": "0"
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Paddle",
+															"sid": 152650330199673,
+															"parameters": {
+																"angle": "15"
+															}
+														}
+													],
+													"sid": 699978973826950,
+													"isOrBlock": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 219474193013607,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 4,
+																"second-value": "0"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 369770783754005,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 3,
+																"second-value": "15"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 331899660251474,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "is-boolean-instance-variable-set",
+																	"objectClass": "Paddle",
+																	"sid": 336800424839038,
+																	"parameters": {
+																		"instance-variable": "LinkedKeyDown"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-speed",
+																	"objectClass": "Paddle",
+																	"sid": 129982238956030,
+																	"behaviorType": "Orbit",
+																	"parameters": {
+																		"speed": "-paddleStrength"
+																	}
+																}
+															],
+															"sid": 770066082053959
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "else",
+																	"objectClass": "System",
+																	"sid": 189731371207015
+																}
+															],
+															"actions": [],
+															"sid": 776028743869839
+														}
+													]
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "else",
+													"objectClass": "System",
+													"sid": 552085811654416
+												}
+											],
+											"actions": [],
+											"sid": 277597792566322,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 389051671971423,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 5,
+																"second-value": "315"
+															}
+														},
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 352254258021946,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 3,
+																"second-value": "360"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 595636813237925,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "is-boolean-instance-variable-set",
+																	"objectClass": "Paddle",
+																	"sid": 569541213638583,
+																	"parameters": {
+																		"instance-variable": "LinkedKeyDown"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "set-speed",
+																	"objectClass": "Paddle",
+																	"sid": 300832518665441,
+																	"behaviorType": "Orbit",
+																	"parameters": {
+																		"speed": "-paddleStrength"
+																	}
+																}
+															],
+															"sid": 180116855272739
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "else",
+																	"objectClass": "System",
+																	"sid": 787031292317485
+																}
+															],
+															"actions": [],
+															"sid": 744668640920338
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 279298668970178,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 2,
+																"second-value": "315"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-speed",
+															"objectClass": "Paddle",
+															"sid": 419098405817950,
+															"behaviorType": "Orbit",
+															"parameters": {
+																"speed": "paddleRetractStrength"
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Paddle",
+															"sid": 285025222968213,
+															"parameters": {
+																"angle": "315"
+															}
+														}
+													],
+													"sid": 593084932543368
+												}
+											]
+										}
+									]
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "Paddle",
+											"sid": 810027111776896,
+											"parameters": {
+												"instance-variable": "PaddleSide",
+												"comparison": 0,
+												"value": "1"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "set-speed",
+											"objectClass": "Paddle",
+											"sid": 309482451752739,
+											"behaviorType": "Orbit",
+											"parameters": {
+												"speed": "-200"
+											}
+										}
+									],
+									"sid": 396527520164911,
+									"disabled": true,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-between-angles",
+													"objectClass": "Paddle",
+													"sid": 697757901117676,
+													"parameters": {
+														"first-angle": "181",
+														"second-angle": "360"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 816410433592217,
+											"disabled": true,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 755096227970912,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 2,
+																"second-value": "315"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-speed",
+															"objectClass": "Paddle",
+															"sid": 941023489624639,
+															"behaviorType": "Orbit",
+															"parameters": {
+																"speed": "5"
+															}
+														}
+													],
+													"sid": 649106038612578,
+													"disabled": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 365443644223221
+														}
+													],
+													"actions": [
+														{
+															"id": "set-speed",
+															"objectClass": "Paddle",
+															"sid": 306842855628361,
+															"behaviorType": "Orbit",
+															"parameters": {
+																"speed": "0"
+															}
+														}
+													],
+													"sid": 306213136272202,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "is-between-angles",
+													"objectClass": "Paddle",
+													"sid": 795368045922818,
+													"parameters": {
+														"first-angle": "0",
+														"second-angle": "180"
+													}
+												}
+											],
+											"actions": [],
+											"sid": 963932274438602,
+											"disabled": true,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "compare-two-values",
+															"objectClass": "System",
+															"sid": 465164454329580,
+															"parameters": {
+																"first-value": "Paddle.Angle",
+																"comparison": 4,
+																"second-value": "15"
+															}
+														}
+													],
+													"actions": [
+														{
+															"id": "set-speed",
+															"objectClass": "Paddle",
+															"sid": 878803317677856,
+															"behaviorType": "Orbit",
+															"parameters": {
+																"speed": "0"
+															}
+														},
+														{
+															"id": "set-angle",
+															"objectClass": "Paddle",
+															"sid": 181338166566835,
+															"parameters": {
+																"angle": "15"
+															}
+														}
+													],
+													"sid": 499001324423706,
+													"disabled": true,
+													"isOrBlock": true
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 540401695771876
+														}
+													],
+													"actions": [
+														{
+															"id": "set-speed",
+															"objectClass": "Paddle",
+															"sid": 250480600897152,
+															"behaviorType": "Orbit",
+															"parameters": {
+																"speed": "5"
+															}
+														}
+													],
+													"sid": 654888642476848,
+													"disabled": true
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 173377984374240
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "CupStroller",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "CupStroller-AddCup",
+							"functionDescription": "",
+							"functionCategory": "CupStroller",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 669329502980306
+						},
+						{
+							"functionName": "CupStroller-ChangeStrollingSpeed",
+							"functionDescription": "",
+							"functionCategory": "CupStroller",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 392239400522212
+						}
+					],
+					"sid": 542027982789891
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Burner",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"functionName": "Burner-ThrowCup",
+							"functionDescription": "",
+							"functionCategory": "",
+							"functionReturnType": "none",
+							"functionIsAsync": false,
+							"functionParameters": [],
+							"eventType": "function-block",
+							"conditions": [],
+							"actions": [],
+							"sid": 757519186568755
+						}
+					],
+					"sid": 291754604954887
+				}
+			],
+			"sid": 436508413634010
+		}
+	],
+	"sid": 450902399143317
+}

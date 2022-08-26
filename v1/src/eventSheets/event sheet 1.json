@@ -1,0 +1,834 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "GAME_STARTED",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 930594100628730
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 980587828131301,
+					"parameters": {
+						"interval-seconds": "random(0.03, 0.1)"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 564200985436391,
+					"parameters": {
+						"object-to-create": "AST__DefaultBean",
+						"layer": "\"Beans\"",
+						"x": "270+random(-5,5)",
+						"y": "23",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 235812488810229
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "AST__DefaultBean",
+					"sid": 632604057521444,
+					"parameters": {
+						"object": "GameObject"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-speed",
+					"objectClass": "AST__DefaultBean",
+					"sid": 436279820273385,
+					"behaviorType": "Rotate",
+					"parameters": {
+						"speed": "Self.Rotate.Speed+choose((random(-60,-180)), (random(60, 180)))"
+					}
+				}
+			],
+			"sid": 197143269315087
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 144941370333769
+				}
+			],
+			"actions": [],
+			"sid": 141058487335287,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for-each",
+							"objectClass": "System",
+							"sid": 614610288534354,
+							"parameters": {
+								"object": "Spiraller"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 772494044065170,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "pick-children",
+									"objectClass": "Spiraller",
+									"sid": 298201665119363,
+									"parameters": {
+										"child": "PhysicsJoint",
+										"which": "own"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "create-limited-revolute-joint",
+									"objectClass": "Spiraller",
+									"sid": 618604333499215,
+									"behaviorType": "Physics",
+									"parameters": {
+										"this-image-point": "\"Joint\"",
+										"object": "PhysicsJoint",
+										"lower-angle": "0",
+										"upper-angle": "360"
+									}
+								}
+							],
+							"sid": 180311651184437
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 453893200476351,
+							"parameters": {
+								"variable": "GAME_STARTED",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 182383989014144
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 339641995169452,
+					"parameters": {
+						"interval-seconds": "1/48"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Paddles-Refresh",
+					"sid": 264066449730559
+				}
+			],
+			"sid": 642038250369230
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 704597641629962,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [],
+			"sid": 931643660000737,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 522513768557849,
+							"parameters": {
+								"object": "Paddle",
+								"expression": "Paddle.PaddleSide",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Paddle",
+							"sid": 455197231738022,
+							"parameters": {
+								"instance-variable": "LinkedKeyDown",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 988521416177035
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 967039442594749
+				}
+			],
+			"actions": [],
+			"sid": 452735170151353,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 615279497849432,
+							"parameters": {
+								"object": "Paddle",
+								"expression": "Paddle.PaddleSide",
+								"comparison": 0,
+								"value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Paddle",
+							"sid": 725194667157426,
+							"parameters": {
+								"instance-variable": "LinkedKeyDown",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 854506383235757
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 795024285452907,
+					"parameters": {
+						"key": 39
+					}
+				}
+			],
+			"actions": [],
+			"sid": 222908713317076,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 546536851582726,
+							"parameters": {
+								"object": "Paddle",
+								"expression": "Paddle.PaddleSide",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Paddle",
+							"sid": 562233838059099,
+							"parameters": {
+								"instance-variable": "LinkedKeyDown",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 234705356478939
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 978283462952631
+				}
+			],
+			"actions": [],
+			"sid": 133808803304729,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "pick-by-comparison",
+							"objectClass": "System",
+							"sid": 807740116962448,
+							"parameters": {
+								"object": "Paddle",
+								"expression": "Paddle.PaddleSide",
+								"comparison": 0,
+								"value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-instvar",
+							"objectClass": "Paddle",
+							"sid": 976431041068281,
+							"parameters": {
+								"instance-variable": "LinkedKeyDown",
+								"value": "false"
+							}
+						}
+					],
+					"sid": 317843598333078
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Grain_Medium",
+					"sid": 340660739353912,
+					"parameters": {
+						"object": "GrindHitbox"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Grains-Grind",
+					"sid": 636718691401301
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Grain_Medium",
+					"sid": 897849756920489
+				}
+			],
+			"sid": 347956015565628
+		},
+		{
+			"eventType": "variable",
+			"name": "ScoopDir",
+			"type": "string",
+			"initialValue": "NULL",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 991345027485007
+		},
+		{
+			"eventType": "variable",
+			"name": "ScoopDown",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 716024296650289
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 117981204270187,
+					"parameters": {
+						"variable": "GAME_STARTED"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 428483617375746,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 555225554153495,
+							"parameters": {
+								"variable": "ScoopDir",
+								"comparison": 0,
+								"value": "\"Down\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 306322741416661,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-between-angles",
+									"objectClass": "Scoop",
+									"sid": 126748745554501,
+									"parameters": {
+										"first-angle": "-180",
+										"second-angle": "-360"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Scoop",
+									"sid": 859859711923060,
+									"parameters": {
+										"angle": "Self.Angle-0.5"
+									}
+								}
+							],
+							"sid": 636278109744774
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 878235010691554,
+							"parameters": {
+								"variable": "ScoopDir",
+								"comparison": 0,
+								"value": "\"Up\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 682195984549933,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 234249612540004,
+									"parameters": {
+										"first-value": "Scoop.Angle",
+										"comparison": 2,
+										"second-value": "359"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Scoop",
+									"sid": 157709580582456,
+									"parameters": {
+										"angle": "Self.Angle+0.25"
+									}
+								}
+							],
+							"sid": 236158436096411
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 837287729449756,
+							"parameters": {
+								"variable": "ScoopDir",
+								"comparison": 0,
+								"value": "\"Down\""
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-eventvar",
+							"objectClass": "System",
+							"sid": 368890676039052,
+							"parameters": {
+								"variable": "ScoopDir",
+								"comparison": 0,
+								"value": "\"Up\""
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [],
+					"sid": 384190821486081,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 626351892634799,
+									"parameters": {
+										"first-value": "Scoop.Angle",
+										"comparison": 2,
+										"second-value": "359"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-angle",
+									"objectClass": "Scoop",
+									"sid": 823175832195701,
+									"parameters": {
+										"angle": "Self.Angle+0.0001+(abs(anglediff(Self.Angle, 270))/100)"
+									}
+								}
+							],
+							"sid": 535156920497416
+						}
+					]
+				}
+			]
+		},
+		{
+			"functionName": "Grains-Grind",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 900889697065557,
+					"parameters": {
+						"seconds": "random(2,3.2)"
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 672950583797958,
+					"parameters": {
+						"object-to-create": "Grain_Smol",
+						"layer": "0",
+						"x": "Grinder.ImagePointX(\"Drop\")+random(-15,15)",
+						"y": "Grinder.ImagePointY(\"Drop\")",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 969319842113972
+		},
+		{
+			"functionName": "Grains-SpawnWave",
+			"functionDescription": "Spawn a wave of coffee grains to fall down.",
+			"functionCategory": "Grains",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 341407817214569,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "for",
+							"objectClass": "System",
+							"sid": 430465006760683,
+							"parameters": {
+								"name": "\"i_Grain\"",
+								"start-index": "0",
+								"end-index": "round(random(4, 14))"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 643444157439052,
+							"parameters": {
+								"seconds": "0.02*loopindex(\"i_Grain\")"
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 732345495063924,
+							"parameters": {
+								"object-to-create": "Grain_Medium",
+								"layer": "0",
+								"x": "(LayoutWidth/2)+random(-40,40)",
+								"y": "30",
+								"create-hierarchy": false,
+								"template-name": "\"\""
+							}
+						}
+					],
+					"sid": 626287601382165
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 906931020324519,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Button"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 583241598498032,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 666534698553579,
+							"parameters": {
+								"first-value": "Button.AnimationName",
+								"comparison": 0,
+								"second-value": "\"MoreGrain\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "Grains-SpawnWave",
+							"sid": 469094319356628
+						}
+					],
+					"sid": 176881283889052
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 589469587249750
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 617130855423071,
+							"parameters": {
+								"first-value": "Button.AnimationName",
+								"comparison": 0,
+								"second-value": "\"ScooperUp\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 859344994634102,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 864864682211571,
+									"parameters": {
+										"variable": "ScoopDir",
+										"comparison": 1,
+										"value": "\"Up\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 882944829466421,
+									"parameters": {
+										"variable": "ScoopDir",
+										"value": "\"Up\""
+									}
+								}
+							],
+							"sid": 386521106459416
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 488841899530963
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 444891133380670,
+									"parameters": {
+										"variable": "ScoopDir",
+										"value": "\"NULL\""
+									}
+								}
+							],
+							"sid": 224938416299689
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 283496975444666
+						},
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 554510463942071,
+							"parameters": {
+								"first-value": "Button.AnimationName",
+								"comparison": 0,
+								"second-value": "\"ScooperDown\""
+							}
+						}
+					],
+					"actions": [],
+					"sid": 531946415739360,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-eventvar",
+									"objectClass": "System",
+									"sid": 833437817663022,
+									"parameters": {
+										"variable": "ScoopDir",
+										"comparison": 1,
+										"value": "\"Down\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 586041006759883,
+									"parameters": {
+										"variable": "ScoopDir",
+										"value": "\"Down\""
+									}
+								}
+							],
+							"sid": 286651534501534
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "else",
+									"objectClass": "System",
+									"sid": 733641879115091
+								}
+							],
+							"actions": [
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 327859176725105,
+									"parameters": {
+										"variable": "ScoopDir",
+										"value": "\"NULL\""
+									}
+								}
+							],
+							"sid": 339837752556186
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 425443799205884
+						}
+					],
+					"actions": [],
+					"sid": 446940357224826
+				}
+			]
+		}
+	],
+	"sid": 588792510303735
+}

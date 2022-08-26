@@ -1,0 +1,89 @@
+{
+	"name": "AST__AmanitaCover",
+	"plugin-id": "Sprite",
+	"sid": 349113122818465,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 199,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4829705,
+						"collisionPoly": {
+							"points": [
+								0.15577889447236182,
+								0.23529411764705882,
+								0.35175879396984927,
+								0.16176470588235295,
+								0.40703517587939697,
+								0.16176470588235295,
+								0.40703517587939697,
+								0.8529411764705882,
+								0.24120603015075376,
+								0.7941176470588235,
+								0.12060301507537688,
+								0.7058823529411765,
+								0.005025125628140704,
+								0.5,
+								0.01507537688442211,
+								0.4117647058823529
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 199,
+						"height": 68,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5114449,
+						"collisionPoly": {
+							"points": [
+								0.592964824120603,
+								0.16176470588235295,
+								0.6733668341708543,
+								0.16176470588235295,
+								0.8743718592964824,
+								0.23529411764705882,
+								0.9849246231155779,
+								0.39705882352941174,
+								0.9849246231155779,
+								0.5,
+								0.8894472361809045,
+								0.6764705882352942,
+								0.7487437185929648,
+								0.7941176470588235,
+								0.592964824120603,
+								0.8529411764705882
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 798607577113963,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

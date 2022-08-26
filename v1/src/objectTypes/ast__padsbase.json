@@ -1,0 +1,37 @@
+{
+	"name": "AST__PadsBase",
+	"plugin-id": "Sprite",
+	"sid": 952505013570978,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 540,
+						"height": 151,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6643700,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 306932220367372,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,68 @@
+{
+	"name": "AST__CottonCandyFlavor",
+	"plugin-id": "Sprite",
+	"sid": 160206578095267,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Sin",
+			"name": "Sine",
+			"sid": 769044960790553
+		},
+		{
+			"behaviorId": "Sin",
+			"name": "Sine2",
+			"sid": 872901676092041
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 38,
+						"height": 40,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3754069,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.2894736842105263,
+								0.05,
+								0.4473684210526316,
+								0.2,
+								0.5263157894736842,
+								0.35,
+								0.7631578947368421,
+								0.4,
+								1,
+								0.625,
+								1,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 263118387866625,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

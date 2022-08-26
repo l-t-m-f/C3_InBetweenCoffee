@@ -1,0 +1,90 @@
+{
+	"name": "Button",
+	"plugin-id": "Sprite",
+	"sid": 899023989657088,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Type",
+			"type": "number",
+			"desc": "",
+			"sid": 605539100677912
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 69,
+						"height": 69,
+						"originX": -0.028985507246376812,
+						"originY": -0.028985507246376812,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7550306,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 469332346918622,
+				"name": "MoreGrain",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 23,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8283405,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 626095542280800,
+				"name": "ScooperUp",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			},
+			{
+				"frames": [
+					{
+						"width": 25,
+						"height": 23,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4568886,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 671667698424862,
+				"name": "ScooperDown",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

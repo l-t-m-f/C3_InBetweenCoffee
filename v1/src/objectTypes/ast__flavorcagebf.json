@@ -1,0 +1,37 @@
+{
+	"name": "AST__FlavorCageBF",
+	"plugin-id": "Sprite",
+	"sid": 264247375927629,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 114,
+						"height": 248,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8160008,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 275268082171095,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

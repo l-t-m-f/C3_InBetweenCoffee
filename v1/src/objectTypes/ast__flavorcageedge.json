@@ -1,0 +1,89 @@
+{
+	"name": "AST__FlavorCageEdge",
+	"plugin-id": "Sprite",
+	"sid": 927650280421812,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 127,
+						"height": 263,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1998650,
+						"collisionPoly": {
+							"points": [
+								0.7637795275590551,
+								0.3688212927756654,
+								0.5,
+								0.9049429657794676,
+								0.9921259842519685,
+								0,
+								0.7559055118110236,
+								0.5,
+								0.6062992125984252,
+								0.8098859315589354,
+								0.5,
+								0.9163498098859315,
+								0,
+								0.9961977186311787,
+								0.7086614173228346,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					},
+					{
+						"width": 127,
+						"height": 263,
+						"originX": 0,
+						"originY": 0,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2957070,
+						"collisionPoly": {
+							"points": [
+								0.7637795275590551,
+								0.3688212927756654,
+								0.5,
+								0.9049429657794676,
+								0.9921259842519685,
+								0,
+								0.7559055118110236,
+								0.5,
+								0.6062992125984252,
+								0.8098859315589354,
+								0.5,
+								0.9163498098859315,
+								0,
+								0.9961977186311787,
+								0.7086614173228346,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 491874586069825,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

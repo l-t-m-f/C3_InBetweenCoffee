@@ -1,0 +1,69 @@
+{
+	"name": "AST__DefaultBean",
+	"plugin-id": "Sprite",
+	"sid": 156697120092407,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 888104665176228
+		},
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 300359079156806
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 254742861158835
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 7,
+						"height": 12,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8001203,
+						"collisionPoly": {
+							"points": [
+								0.5,
+								0,
+								1,
+								0.10286458333333333,
+								0.8035714285714284,
+								0.510416666666667,
+								0.9910714285714297,
+								0.8580729166666672,
+								0.4866071428571429,
+								1,
+								0,
+								0.48828125000000017
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 861208250686579,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

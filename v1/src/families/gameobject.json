@@ -1,0 +1,33 @@
+{
+	"name": "GameObject",
+	"plugin-id": "Sprite",
+	"sid": 463239232977561,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 313455503490823
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"Grain_Medium",
+		"PhysicsJoint",
+		"Wall",
+		"Bumper",
+		"Spiraller",
+		"Grain_Smol",
+		"Grinder",
+		"AST__StartSpinner",
+		"AST__AmanitaCover",
+		"AST__BumperH",
+		"AST__TopGlass_edge",
+		"AST__MachineLeftEdge",
+		"AST__MachineRightEdge",
+		"InvisibleCollider",
+		"AST__CottonCandyFlavor",
+		"AST__SmallGreenSpinner",
+		"Paddle"
+	]
+}
